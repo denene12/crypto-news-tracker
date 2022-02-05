@@ -32,7 +32,9 @@ color: #fff;
 	align-items: center;
 	justify-content: space-between;
 	padding: 5px;
-	position: relative;
+	position: fixed;
+	left: 2000px;
+	top: 20px;
 	height: 26px;
 	width: 50px;
 	transform: scale(1.5);
@@ -50,13 +52,12 @@ color: #fff;
 	transform: translateX(0px);
 	transition: transform 0.2s linear;
 }
-
-.checkbox:checked + .ball {
-	transform: translateX(24px);
-	background-color: #000000;
-}
 .checkbox:checked + .label {
 	background-color: white
+}
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+	background-color: #000000;
 }
 
   table {
@@ -71,8 +72,8 @@ color: #fff;
     background-repeat:  no-repeat;
     background-size:  cover;
 }
-.bg-img.dark {
-    background-color: rgb(28, 44, 189);
+.checkbox:checked + .bg-img {
+	 background-color: rgb(28, 44, 189);
     color: black;
     background-image: url(./images/mesh-graphic-fading.png) ;
     background-position: center center;
