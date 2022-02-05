@@ -9,7 +9,12 @@
    
       font-family: Arial, Helvetica, sans-serif
   }
-
+body.dark {
+background-color: #292C35;
+}
+body.dark p {
+color: #fff;
+}
   h1{
       text-decoration: underline;
       font-family: 'Chakra Petch', sans-serif;
@@ -27,8 +32,19 @@
     background-repeat:  no-repeat;
     background-size:  cover;
 }
+.bg-img.dark {
+    background-color: rgb(28, 44, 189);
+    color: black;
+    background-image: url(./images/mesh-graphic-fading.png) ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-size:  cover;
+}
 .main-section{
     background-color: rgb(255, 255, 255)
+}
+.main-section.dark {
+    background-color: #292C35;
 }
 
 .image-news img {
@@ -75,6 +91,24 @@ height: 350px;
 
 .accordion {
     background-color: rgb(124, 152, 241);
+    color: rgb(0, 2, 10);
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 1em;
+    text-align: center;
+ 
+    
+    
+  }
+.accordion.dark {
+    background-color: rgb(24, 51, 141);
     color: rgb(255, 255, 255);
     cursor: pointer;
     padding: 10px;
@@ -128,13 +162,18 @@ height: 350px;
     margin: 0.75rem;
     
 }
-
+#coin_header.dark{
+    border-bottom: solid 1px white
+}
 #coin_header{
     border-bottom: solid 1px black
 }
 
 #myChart{
     border-top: solid 1px black
+}
+#myChart.dark{
+    border-top: solid 1px white
 }
 
 .help{
